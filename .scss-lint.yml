@@ -1,0 +1,68 @@
+# Defaults: https://github.com/causes/scss-lint/blob/master/config/default.yml
+
+exclude: []
+
+linters:
+
+  ColorVariable:
+    enabled: false
+
+
+  # permit full hex codes, don't enforce 3-digit if possible
+  HexFormat:
+    enabled: false
+
+  HexLength:
+    enabled: false
+
+  QualifyingElement:
+    enable: true
+    allow_element_with_attribute: true
+    allow_element_with_class: false
+    allow_element_with_id: false
+
+  # default of 3 is too strict. Be pragmatic.
+  SelectorDepth:
+    enabled: true
+    max_depth: 5
+
+  NestingDepth:
+    enabled: true
+    max_depth: 5
+
+  ImportantRule:
+    enabled: false
+
+  # permit `margin: 0 10px 0 0;` don't enforce shorthand
+  Shorthand:
+    enabled: false
+
+  # permit 0.1 as well as .1
+  LeadingZero:
+    enabled: false
+
+  # permit sorting of properties non-alphabetically
+  PropertySortOrder:
+    enabled: false
+
+  # permit empty rules
+  EmptyRule:
+    enabled: false
+
+  # assume that if we are duplicating properties, we mean it
+  DuplicateProperty:
+    enabled: false
+
+  # we so BEM
+  SelectorFormat:
+    convention: hyphenated_BEM
+
+  NameFormat:
+    enabled: false
+    convention: hyphenated_BEM
+
+  # disable until bugfix is released for scss-lint:
+  # - Fix crash in SingleLinePerSelector for selectors containing only interpolation
+  # Keep an eye on the changelog: https://github.com/causes/scss-lint/blob/master/CHANGELOG.md
+  SingleLinePerSelector:
+    enabled: false
