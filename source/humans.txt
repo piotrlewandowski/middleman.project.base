@@ -1,0 +1,15 @@
+/* humanstxt.org */
+
+/* TEAM */
+Developer: Piotr Lewandowski
+Twitter: @lewy76
+Location: London, United Kingdom
+
+/* THANKS */
+Middleman Creator: Thomas Reynolds
+Twitter: @tdreyno
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Middleman, SASS, jQuery
+Software: WebStorm
